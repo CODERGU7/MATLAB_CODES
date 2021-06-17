@@ -1,0 +1,8 @@
+clc;
+clear all;
+close all;
+
+
+b=input('Enter the numerator coefficient');
+a=input('Enter the denominator coefficent');
+zplane(b,a)

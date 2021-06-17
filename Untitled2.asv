@@ -1,0 +1,24 @@
+clc;
+clear all;
+close all;
+
+b=input('Enter the num coeff: ');
+a=input('Enter the den coeff: ');
+[r,p,k] = residue(b,a)
+[r,p,k] = residuez(b,a)
+
+figure('Name','Harshal Chowdhary 2K19/EC/071','NumberTitle','off'); 
+[H,T]=impulse(b,a);
+subplot(2,1,1);
+xlabel('time------->');
+ylabel('h------>');
+title('Impulse Response');
+plot (H);
+[E]=step(b,a);
+subplot(2,1,2);
+xlabel('time------->');
+ylabel('h------>');
+title('Step Response');
+plot (E);
+
+t=input('Thank you');
